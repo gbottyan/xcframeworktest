@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "Test", targets: ["Test","TestDependencies"]),
     ],
     dependencies: [
-       //.package(name: "Promises", url: "https://github.com/google/promises.git", from: "2.0.0")
+       .package(name: "Promises", url: "https://github.com/google/promises.git", from: "2.0.0")
     ],
     targets: [
         .binaryTarget(name: "Test", path: "Sources/Test.xcframework" ),
