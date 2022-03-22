@@ -16,6 +16,6 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "Test", path: "Sources/Test.xcframework" ),
-        .target(name: "TestDependencies", dependencies: ["Promises"])
+        .target(name: "TestDependencies", dependencies: ["Promises",.product(name: "FBLPromises", package: "Promises")])
     ]
 )
