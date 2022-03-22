@@ -9,7 +9,7 @@ let package = Package(
           .iOS(.v10), .tvOS(.v10)
        ],
     products: [
-        .library(name: "Test", targets: ["Test","TestDependencies"]),
+        .library(name: "Test", type: .static, targets: ["Test","TestDependencies"]),
     ],
     dependencies: [
        .package(name: "Promises", url: "https://github.com/google/promises.git", from: "2.0.0")
